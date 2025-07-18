@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script Writer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Script Writing Tool</h1>
+    <button onclick="toggleDarkMode()" id="darkModeToggle">🌓</button>
+  </header>
+
+  <section id="controls">
+    <button onclick="loadTemplate('film')">🎬 Film</button>
+    <button onclick="loadTemplate('youtube')">📺 YouTube</button>
+    <button onclick="loadTemplate('podcast')">🎙 Podcast</button>
+    <button onclick="aiSuggest()">✨ AI Suggest</button>
+    <button onclick="clearScript()">🗑 Clear</button>
+    <button onclick="downloadScript()">💾 Download</button>
+    <span id="wordCount">Words: 0</span>
+  </section>
+
+  <main>
+    <textarea id="scriptText" placeholder="Start writing your script here..." spellcheck="true"></textarea>
+    <aside>
+      <h2>Characters</h2>
+      <input type="text" id="charName" placeholder="Character name">
+      <input type="text" id="charRole" placeholder="Role">
+      <button onclick="addCharacter()">➕ Add</button>
+      <div id="characterList"></div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

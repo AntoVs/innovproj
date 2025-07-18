@@ -1,0 +1,135 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+#darkModeToggle {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#controls button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#controls button:hover {
+  background-color: #0056b3;
+}
+
+#wordCount {
+  margin-left: auto;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+}
+
+textarea#scriptText {
+  flex: 2;
+  min-height: 70vh;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  background-color: #fff;
+  color: #222;
+}
+
+aside {
+  flex: 1;
+  border-left: 2px solid #eee;
+  padding-left: 1rem;
+}
+
+aside h2 {
+  margin-bottom: 0.5rem;
+}
+
+aside input {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+aside button {
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#characterList {
+  font-size: 0.9rem;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark textarea {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #333;
+}
+
+body.dark #controls button,
+body.dark aside button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark #controls button:hover {
+  background-color: #222;
+}
+
