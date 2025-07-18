@@ -16,7 +16,8 @@ Scriptflow is a lightweight, responsive scriptwriting tool built for creators, s
 
 ## 📷 Screenshots
 
-_Add your screenshots here_
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/5fdebbd7-70a8-461c-86b4-185bdc67af05" />
+
 
 ## 🛠 Technologies Used
 
@@ -39,5 +40,4 @@ _Add your screenshots here_
 2. Open `main.html` in your browser
 3. Start writing and exploring!
 
-## 📂 Project Structure
 
